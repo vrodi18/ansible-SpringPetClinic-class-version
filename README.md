@@ -1,0 +1,1 @@
+# ansible-SpringPetClinic-class-version
