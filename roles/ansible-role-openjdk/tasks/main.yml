@@ -1,0 +1,14 @@
+- name: Install OpenJDK
+  yum:
+    name:
+    - "java-{{ open_jdk_version }}-openjdk"
+    - maven
+  when: ansible_distribution == 'Centos'
+
+- name: install OpenJDK Debian
+  package:
+    name:
+    - openjdk-11-jdk
+    - maven
+    update_cache: yes
+  when: ansible_os_family == 'Debian'

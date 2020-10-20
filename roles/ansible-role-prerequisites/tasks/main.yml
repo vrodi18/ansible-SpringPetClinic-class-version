@@ -1,0 +1,7 @@
+- name: Install Prerequisites
+  yum:
+    name:
+    - vim
+    - wget
+    - git
+    - unzip
